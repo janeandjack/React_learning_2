@@ -1,24 +1,15 @@
-import React from "react"
-import Joke from './excerise/joke'
-import jokesData from "./excerise/jokesData"
+import React from 'react'
+import Products from './excerise/mapping comp/product'
+import Produ from './excerise/mapping comp/vschoolProducts'
 
-function App() {
-    const jokeComponents = jokesData.map(joke =>
-            <Joke key={joke.id} question={joke.question} answer={joke.answer} / >     )
-    
-
-    return (
-        <div> 
-            {jokeComponents}
-  
-     
-     
-
-   
-   
-</div>
-        
+function App(){
+    const product_1 = Produ.map(produc =>
+        <Products key={produc.id} price={produc.price} name={produc.name} description={produc.description} />)
+    return(
+        <div>
+            {product_1}
+        </div>
     )
 }
 
-export default  App
+export default App
