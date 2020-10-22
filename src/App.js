@@ -1,13 +1,15 @@
 import React from 'react'
-import Products from './excerise/mapping comp/product'
-import Produ from './excerise/mapping comp/vschoolProducts'
+import TodoItem from "./excerise/todo phase 3/TodoItem"
+import todosData from "./excerise/todo phase 3/tpdosData"
 
 function App(){
-    const product_1 = Produ.map(produc =>
-        <Products key={produc.id} price={produc.price} name={produc.name} description={produc.description} />)
+    const appp = todosData.map(toood =>
+        <TodoItem key={toood.id} ee={toood}  />)
+        
     return(
-        <div>
-            {product_1}
+        <div className="todo-list">
+           {appp}
+
         </div>
     )
 }

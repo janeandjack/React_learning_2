@@ -1,15 +1,17 @@
 import React from 'react'
 
-function produ (props){
+function prode (props){
+    // console.log(props);
     return(
+        
         <div>
-            <h3>{props.name}</h3>
-            <h3>{props.price}</h3>
+            <h2>{props.prod.name}</h2>
+            <h3>{props.prod.price.toLocaleString("en-Us", { style: "currency", currency: "USD"})} 
+            - <br/>{props.prod.description} </h3>
 
-            <h3>{props.description}</h3>
-
+          
         </div>
     )
 }
 
-export default produ
+export default prode
