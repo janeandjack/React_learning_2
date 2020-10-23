@@ -1,17 +1,26 @@
 import React from 'react'
-import TodoItem from "./excerise/todo phase 3/TodoItem"
-import todosData from "./excerise/todo phase 3/tpdosData"
 
-function App(){
-    const appp = todosData.map(toood =>
-        <TodoItem key={toood.id} ee={toood}  />)
+
+// function App(){
+//     const appp = todosData.map(toood =>
+//         <TodoItem key={toood.id} ee={toood}  />)
         
-    return(
-        <div className="todo-list">
-           {appp}
+//     return(
+//         <div className="todo-list">
+//            {appp}
 
-        </div>
-    )
+//         </div>
+//     )
+// }
+
+class App extends React.Component {
+    render(){
+        return(
+            <div>
+                <h1>Code goes here</h1>
+            </div>
+        )
+    }
 }
 
 export default App
