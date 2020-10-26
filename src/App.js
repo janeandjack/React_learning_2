@@ -1,23 +1,29 @@
-import React from "react"
+import React from 'react'
 
 class App extends React.Component {
-
     constructor(){
         super()
-        this.state = { 
-            answer: "Yes",
-            uu: "no"
-         }
+        this.state = {
+            count: 0
+        }
+        this.dd = this.dd.bind(this)
+    }
 
+    dd(){
+        this.setState(ddd =>{
+            return{
+                count: ddd.count + 1
+            }
+        })
     }
-    render() {
-        return (
-            <div>
-                <h1>Is state important to know? <br/>{this.state.answer}{this.state.uu}</h1>
-                {/* <ChildComponent answer={this.state.answer}/> */}
-            </div>
-        )
-    }
+render(){
+    return(
+        <div>
+            <h1>{this.state.count}</h1>
+            <button onClick={this.dd}>click</button>
+        </div>
+    )
+}
 }
 
 export default App
